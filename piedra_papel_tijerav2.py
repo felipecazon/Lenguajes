@@ -1,14 +1,3 @@
-
-
-
-
-#● Permita configurar la cantidad de rondas ganadoras (mejor de 5) mediante
-#una variable al inicio del programa (por ejemplo, rondas_totales = 5), y que el
-#juego termine antes si alguien ya no puede ser alcanzado.
-#● Valide entradas y vuelva a pedir la jugada si es inválida, sin contar esa ronda.
-
-
-
 import random
 
 opciones = ["piedra", "papel", "tijera"]
@@ -36,8 +25,8 @@ while ronda <= rondas_totales:
         print("Entrada no válida. Debe ser piedra, papel o tijera.")
         jugada_usuario = input("Tu jugada: ").strip().lower()
 
-    jugada_pc = "papel"
-    #random.choice(opciones)
+    jugada_pc = random.choice(opciones)
+
 
     print(f"La computadora eligió: {jugada_pc}")
 
