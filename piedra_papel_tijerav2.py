@@ -44,12 +44,6 @@ while ronda <= rondas_totales:
         print("Perdiste la ronda.")
         puntos_pc += 1
  
-    if puntos_usuario > rondas_totales / 2:
-        break
-
-    if puntos_pc > rondas_totales / 2:
-        break
-
     if abs(puntos_pc - puntos_usuario) > rondas_totales - ronda:
         break
     
